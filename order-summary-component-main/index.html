@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Red Hat Display", sans-serif;
+        background-color: #e0e8ff;
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+      }
+
+      .container {
+        height: 640px;
+        width: 450px;
+        background: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 20px;
+      }
+
+      .top-box img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+
+      .middle-box h2 {
+        text-align: center;
+        font-weight: 900;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: rgb(62, 62, 70);
+      }
+
+      .middle-box p {
+        text-align: center;
+        padding: 10px 50px;
+        color: gray;
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      .bottom-box {
+        width: 360px;
+        height: 90px;
+        background-color: hsl(225, 100%, 98%);
+        justify-content: center;
+        align-items: center;
+        margin: 15px 45px;
+        border-radius: 10px;
+        display: flex;
+      }
+
+      .bottom-box img {
+        margin-left: -10px;
+      }
+
+      .bottom-box p {
+        margin-right: 45px;
+        margin-left: -35px;
+        font-weight: 900;
+        color: rgb(62, 62, 70);
+      }
+
+      .bottom-box span {
+        font-weight: normal;
+        color: gray;
+      }
+
+      .bottom-box a {
+        font-weight: 900;
+        color: hsl(245, 75%, 52%);
+      }
+
+      .btn1 {
+        display: flex;
+        margin: 25px 45px;
+        background-color: hsl(245, 75%, 52%);
+        padding: 15px 50px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 hsl(229, 76%, 55%);
+      }
+
+      .btn1 a {
+        margin-left: 55px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .btn2 {
+        display: flex;
+        margin: 5px 45px;
+        padding: 5px 50px;
+        border-radius: 10px;
+      }
+
+      .btn2 a {
+        margin-left: 85px;
+        color: hsl(224, 23%, 55%);
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .btn1:hover {
+        opacity: 0.5;
+      }
+
+      .btn2:hover {
+        opacity: 0.5;
+      }
+
+      .bottom-box a:hover {
+        opacity: 0.5;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-box">
+        <img src="./images/illustration-hero.svg" alt="illustration-hero" />
+      </div>
+      <div class="middle-box">
+        <h2>Order Summary</h2>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="bottom-box">
+          <img src="./images/icon-music.svg" alt="music icon" />
+          <p>
+            Annual Plan <br />
+            <span>$59.99/year</span>
+          </p>
+          <a href="#">Change</a>
+        </div>
+        <div class="btn1">
+          <a href="#">Proceed to Payment</a>
+        </div>
+        <div class="btn2">
+          <a href="#">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Yesha Patel</a>.
+    </div>
+  </body>
+</html>
